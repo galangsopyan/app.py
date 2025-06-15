@@ -54,6 +54,10 @@ with tab1:
             time_B = st.number_input("Jam mesin per unit Pemanggang Roti", value=3.0, step=0.1, min_value=0.1)
 
         total_time = st.number_input("Total jam mesin tersedia per minggu", value=100.0, step=1.0, min_value=1.0)
+         # Menampilkan rumus fungsi tujuan
+        st.markdown("### 📈 Fungsi Tujuan:")
+        st.latex(f"Z = {profit_A}x + {profit_B}y")
+
 
         submitted = st.form_submit_button("🔍 Hitung Produksi Optimal")
 
