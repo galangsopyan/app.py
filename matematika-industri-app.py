@@ -47,11 +47,11 @@ with tab1:
 
         with col1:
             profit_A = st.number_input("Keuntungan per unit Blender (Rp)", key="profit_A", value=70000, step=1000, min_value=0)
-            time_A = st.number_input("Jam mesin per unit Blender", key="time_A", value=2.0, step=0.1, min_value=0.1)
+            time_A = st.number_input("Waktu mesin per unit Blender(jam)", key="time_A", value=2.0, step=0.1, min_value=0.1)
 
         with col2:
             profit_B = st.number_input("Keuntungan per unit Pemanggang Roti (Rp)", key="profit_B", value=80000, step=1000, min_value=0)
-            time_B = st.number_input("Jam mesin per unit Pemanggang Roti", key="time_B", value=3.0, step=0.1, min_value=0.1)
+            time_B = st.number_input("Waktu mesin per unit Pemanggang Roti(jam)", key="time_B", value=3.0, step=0.1, min_value=0.1)
 
         total_time = st.number_input("Total jam mesin tersedia per minggu", key="total_time", value=100.0, step=1.0, min_value=1.0)
          # Menampilkan rumus fungsi tujuan
